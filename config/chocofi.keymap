@@ -36,10 +36,10 @@
 
         Nav {
             bindings = <
-  &none  &none             &none               &none         &none    &caps_word  &kp CAPSLOCK  &kp BACKSPACE  &kp DEL    &kp INSERT
-  &none  &sk LG(LEFT_ALT)  &sk LG(LEFT_SHIFT)  &sk LEFT_GUI  &none    &kp LEFT    &kp DOWN      &kp UP         &kp RIGHT  &kp ENTER
-  &none  &none             &none               &none         &none    &kp HOME    &kp PG_DN     &kp PG_UP      &kp END    &kp PRINTSCREEN
-                           &kp ESC             &kp TAB       &mo 3    &none       &none         &none
+  &none         &sk LG(LEFT_ALT)  &sk LG(LSHIFT)  &sk LG(LCTRL)   &none            &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
+  &sk LEFT_ALT  &sk LSHIFT        &sk LGUI        &sk LCTRL       &sk RIGHT_ALT    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
+  &none         &none             &none           &none           &none            &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
+                                  &sk LCTRL       &sk LEFT_SHIFT  &sk LGUI         &none     &none      &none
             >;
 
             label = "Nav";
@@ -64,10 +64,10 @@
 
         Func {
             bindings = <
-  &kp F1   &kp F2   &kp F3             &kp F4        &kp F5                   &kp F6        &kp F7        &kp F8          &kp F9        &kp F10
-  &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_MUTE               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
-  &none    &none    &kp C_BRI_DEC      &kp C_BRI_UP  &kp C_BRIGHTNESS_AUTO    &out OUT_BLE  &out OUT_USB  &studio_unlock  &bootloader   &bt BT_CLR
-                    &none              &none         &none                    &none         &none         &none
+  &kp C_POWER  &kp C_SLEEP  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
+  &kp F1       &kp F2       &kp F3             &kp F4           &kp F5                   &kp F6        &kp F7        &kp F8          &kp F9        &kp F10
+  &kp F11      &kp F12      &kp C_BRI_DEC      &kp C_BRI_UP     &kp C_BRIGHTNESS_AUTO    &out OUT_BLE  &out OUT_USB  &studio_unlock  &bootloader   &bt BT_CLR
+                            &none              &none            &none                    &none         &none         &none
             >;
 
             label = "Func";
@@ -76,10 +76,10 @@
         Mouse {
             label = "Mouse";
             bindings = <
-  &kp LS(X)  &kp LC(LS(C))  &kp LC(C)       &kp LC(V)  &kp LS(INSERT)    &mkp MB1        &mkp MB2        &mkp MB3      &mkp MB4         &mkp MB5
-  &sk LALT   &sk LEFT_WIN   &sk LEFT_SHIFT  &sk LCTRL  &sk RALT          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-  &none      &none          &none           &none      &none             &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                            &none           &none      &none             &none           &none           &none
+  &kp LS(X)  &kp LC(LS(C))   &kp LC(C)  &kp LC(V)  &kp LS(INSERT)    &mkp MB1        &mkp MB2        &mkp MB3      &mkp MB4         &mkp MB5
+  &sk LALT   &sk LEFT_SHIFT  &sk LGUI   &sk LCTRL  &sk RALT          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+  &none      &none           &none      &none      &none             &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                             &none      &none      &none             &none           &none           &none
             >;
         };
     };
