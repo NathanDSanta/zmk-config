@@ -36,10 +36,10 @@
 
         Nav {
             bindings = <
-  &none         &sk LG(LEFT_ALT)  &sk LG(LSHIFT)  &sk LG(LCTRL)   &none            &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
-  &sk LEFT_ALT  &sk LSHIFT        &sk LGUI        &sk LCTRL       &sk RIGHT_ALT    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
-  &none         &none             &none           &none           &none            &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
-                                  &sk LCTRL       &sk LEFT_SHIFT  &sk LGUI         &none     &none      &none
+  &kp LA(LEFT_SHIFT)  &kp LS(RSHIFT)  &sk LG(LSHIFT)  &sk LC(LEFT_SHIFT)  &kp RA(LCTRL)    &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
+  &sk LEFT_ALT        &sk LSHIFT      &sk LGUI        &sk LCTRL           &sk RIGHT_ALT    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
+  &kp LA(LCTRL)       &kp RS(LCTRL)   &kp LG(LCTRL)   &kp LC(RCTRL)       &kp RA(LCTRL)    &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
+                                      &sk LCTRL       &sk LEFT_SHIFT      &sk LGUI         &none     &none      &none
             >;
 
             label = "Nav";
