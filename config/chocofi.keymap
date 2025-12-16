@@ -78,8 +78,26 @@
             bindings = <
   &kp LS(X)  &kp LC(LS(C))   &kp LC(C)  &kp LC(V)  &kp LS(INSERT)    &mkp MB1        &mkp MB2        &mkp MB3      &mkp MB4         &mkp MB5
   &sk LALT   &sk LEFT_SHIFT  &sk LGUI   &sk LCTRL  &sk RALT          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-  &none      &none           &none      &none      &none             &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+  &none      &none           &none      &none      &tog 5            &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
                              &none      &none      &none             &none           &none           &none
+            >;
+        };
+
+        Maincra1 {
+            bindings = <
+  &kp ESC    &kp Q  &kp W  &kp E  &kp R    &trans  &trans  &trans  &trans  &trans
+  &kp LSHFT  &kp A  &kp S  &kp D  &kp F    &trans  &trans  &trans  &trans  &trans
+  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V    &trans  &trans  &trans  &trans  &trans
+                    &kp B  &mo 6  &kp M    &tog 5  &trans  &trans
+            >;
+        };
+
+        Maincra2 {
+            bindings = <
+  &kp O    &kp I      &kp U   &kp Y   &kp T     &trans  &trans  &trans  &trans  &trans
+  &kp L    &kp K      &kp J   &kp H   &kp G     &trans  &trans  &trans  &trans  &trans
+  &kp DOT  &kp COMMA  &kp M   &kp N   &kp B     &trans  &trans  &trans  &trans  &trans
+                      &kp F3  &trans  &kp F5    &trans  &trans  &trans
             >;
         };
     };
