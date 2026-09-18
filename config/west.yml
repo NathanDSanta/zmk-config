@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: NathanDSanta
       url-base: https://github.com/NathanDSanta
-    - name: m165437
-      url-base: https://github.com/m165437
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,9 +14,6 @@ manifest:
       revision: main
     - name: zmk-deck-keys-module
       remote: NathanDSanta
-      revision: main
-    - name: nice-view-gem
-      remote: m165437
       revision: main
   self:
     path: config
