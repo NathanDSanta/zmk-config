@@ -21,7 +21,7 @@
 
 include:
   - board: nice_nano//zmk
-    shield: chocofi_left nice_view_adapter nice_view raw_hid_adapter
+    shield: chocofi_left nice_view_adapter nice_view raw_hid_adapter zmk-usb-logging
     snippet: studio-rpc-usb-uart
   - board: nice_nano//zmk
     shield: chocofi_right nice_view_adapter nice_view raw_hid_adapter
