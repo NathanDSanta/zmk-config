@@ -92,9 +92,9 @@
 
         Maincra1 {
             bindings = <
-  &kp ESC    &kp Q  &kp W  &kp E  &kp R        &deck_key 0x01  &trans  &trans  &trans  &trans
-  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &deck_key 0x02  &trans  &trans  &trans  &trans
-  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &deck_key 0x03  &trans  &trans  &trans  &trans
+  &kp ESC    &kp Q  &kp W  &kp E  &kp R        &deck_key 1  &trans  &trans  &trans  &trans
+  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &deck_key 2  &trans  &trans  &trans  &trans
+  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &deck_key 3  &trans  &trans  &trans  &trans
                     &kp B  &mo 6  &kp SPACE    &tog 5  &trans  &trans
             >;
         };
