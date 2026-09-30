@@ -19,6 +19,31 @@
             compatible = "zmk,behavior-deck-key";
             #binding-cells = <1>;
         };
+
+        lhrm: lhrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LHRM";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <110>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <33 25 15 5 6 16 26 34 35 27 17 7 8 18 28 29 19 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        rhrm: rhrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RHRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <110>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+        };
     };
 
     keymap {
@@ -32,10 +57,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W  &kp F             &kp P       &kp G          &kp J  &kp L  &kp U      &kp Y    &kp SEMI
-  &kp A  &kp R  &kp S             &kp T       &kp D          &kp H  &kp N  &kp E      &kp I    &kp O
-  &kp Z  &kp X  &kp C             &kp V       &kp B          &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                &kp LEFT_CONTROL  &kp LSHIFT  &lt 4 SPACE    &mo 1  &mo 2  &mo 3
+  &kp Q  &kp W             &kp F         &kp P          &kp G          &kp J  &kp L          &kp U             &kp Y             &kp SEMI
+  &kp A  &lhrm LEFT_ALT R  &lhrm LWIN S  &lhrm LCTRL T  &kp D          &kp H  &rhrm LCTRL N  &rhrm LEFT_GUI E  &rhrm LEFT_ALT T  &kp O
+  &kp Z  &kp X             &kp C         &kp V          &kp B          &kp K  &kp M          &kp COMMA         &kp DOT           &kp FSLH
+                           &mo 3         &kp LSHIFT     &lt 4 SPACE    &mo 1  &mo 2          &mo 4
             >;
 
             label = "Colemak";
@@ -43,10 +68,10 @@
 
         Nav {
             bindings = <
-  &kp LA(LEFT_SHIFT)  &kp LS(RSHIFT)  &sk LG(LSHIFT)  &sk LC(LEFT_SHIFT)  &kp RA(LCTRL)    &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
-  &sk LEFT_ALT        &sk LSHIFT      &sk LGUI        &sk LCTRL           &sk RIGHT_ALT    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
-  &kp LA(LCTRL)       &kp RS(LCTRL)   &kp LG(LCTRL)   &kp LC(RCTRL)       &kp RA(LCTRL)    &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
-                                      &sk LCTRL       &sk LEFT_SHIFT      &sk LGUI         &none     &none      &none
+  &kp RA(LEFT_SHIFT)  &kp LA(RSHIFT)  &sk LG(LSHIFT)  &sk LC(LEFT_SHIFT)  &kp RA(LCTRL)    &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
+  &sk RALT            &sk LEFT_ALT    &sk LGUI        &sk LCTRL           &sk RIGHT_ALT    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
+  &kp RA(LCTRL)       &kp LA(LCTRL)   &kp LG(LCTRL)   &kp LC(RCTRL)       &kp RA(LCTRL)    &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
+                                      &sk LCTRL       &sk LEFT_SHIFT      &mo 3            &none     &none      &none
             >;
 
             label = "Nav";
@@ -95,7 +120,7 @@
   &kp ESC    &kp Q  &kp W  &kp E  &kp R        &deck_key 1  &trans  &trans  &trans  &trans
   &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &deck_key 2  &trans  &trans  &trans  &trans
   &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &deck_key 3  &trans  &trans  &trans  &trans
-                    &kp B  &mo 6  &kp SPACE    &tog 5  &trans  &trans
+                    &kp B  &mo 6  &kp SPACE    &tog 5       &trans  &trans
             >;
         };
 
