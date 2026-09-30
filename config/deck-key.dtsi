@@ -1,0 +1,9 @@
+/ {
+    behaviors {
+        dk: deck_key {
+            compatible = "zmk,behavior-deck-key";
+            #binding-cells = <1>;
+            display-name = "Deck Key";
+        };
+    };
+};
