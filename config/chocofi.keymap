@@ -16,6 +16,11 @@
     combos { compatible = "zmk,combos"; };
 
     behaviors {
+        dk: deck_key {
+            compatible = "zmk,behavior-deck-key";
+            #binding-cells = <1>;
+            display-name = "Deck Key";
+        };
 
         lhrm: lhrm {
             compatible = "zmk,behavior-hold-tap";
