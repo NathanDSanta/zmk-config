@@ -15,9 +15,10 @@
     combos { compatible = "zmk,combos"; };
 
     behaviors {
-        deck_key: deck_key {
+        dk: deck_key {
             compatible = "zmk,behavior-deck-key";
             #binding-cells = <1>;
+            display-name = "Deck-key"
         };
 
         lhrm: lhrm {
@@ -68,9 +69,9 @@
 
         Nav {
             bindings = <
-  &kp RA(LEFT_SHIFT)  &kp LA(RSHIFT)  &sk LG(LSHIFT)  &sk LC(LEFT_SHIFT)  &deck_key 1   &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
-  &sk RALT            &sk LEFT_ALT    &sk LGUI        &sk LCTRL           &deck_key 2   &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
-  &kp RA(LCTRL)       &kp LA(LCTRL)   &kp LG(LCTRL)   &kp LC(RCTRL)       &deck_key 3   &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
+  &kp RA(LEFT_SHIFT)  &kp LA(RSHIFT)  &sk LG(LSHIFT)  &sk LC(LEFT_SHIFT)  &dk 1   &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
+  &sk RALT            &sk LEFT_ALT    &sk LGUI        &sk LCTRL           &dk 2   &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
+  &kp RA(LCTRL)       &kp LA(LCTRL)   &kp LG(LCTRL)   &kp LC(RCTRL)       &dk 3   &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
                                       &sk LCTRL       &sk LEFT_SHIFT      &mo 3        &none     &none      &none
             >;
 
