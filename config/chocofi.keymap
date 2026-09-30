@@ -57,10 +57,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W             &kp F         &kp P          &kp G          &kp J  &kp L          &kp U             &kp Y             &kp SEMI
-  &kp A  &lhrm LEFT_ALT R  &lhrm LWIN S  &lhrm LCTRL T  &kp D          &kp H  &rhrm LCTRL N  &rhrm LEFT_GUI E  &rhrm LEFT_ALT I  &kp O
-  &kp Z  &kp X             &kp C         &kp V          &kp B          &kp K  &kp M          &kp COMMA         &kp DOT           &kp FSLH
-                           &mo 3         &kp LSHIFT     &lt 4 SPACE    &mo 1  &mo 2          &mo 4
+  &kp Q  &kp W  &kp F  &kp P       &kp G          &kp J  &kp L  &kp U      &kp Y    &kp SEMI
+  &kp A  &kp R  &kp S  &kp T       &kp D          &kp H  &kp N  &kp E      &kp I    &kp O
+  &kp Z  &kp X  &kp C  &kp V       &kp B          &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                &mo 3  &kp LSHIFT  &lt 4 SPACE    &mo 1  &mo 2  &mo 4
             >;
 
             label = "Colemak";
@@ -68,10 +68,10 @@
 
         Nav {
             bindings = <
-  &kp RA(LEFT_SHIFT)  &kp LA(RSHIFT)  &sk LG(LSHIFT)  &sk LC(LEFT_SHIFT)  &kp RA(LCTRL)    &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
-  &sk RALT            &sk LEFT_ALT    &sk LGUI        &sk LCTRL           &sk RIGHT_ALT    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
-  &kp RA(LCTRL)       &kp LA(LCTRL)   &kp LG(LCTRL)   &kp LC(RCTRL)       &kp RA(LCTRL)    &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
-                                      &sk LCTRL       &sk LEFT_SHIFT      &mo 3            &none     &none      &none
+  &kp RA(LEFT_SHIFT)  &kp LA(RSHIFT)  &sk LG(LSHIFT)  &sk LC(LEFT_SHIFT)  &deck_key    &kp CAPS  &kp ESC    &kp BACKSPACE  &kp TAB    &kp DELETE
+  &sk RALT            &sk LEFT_ALT    &sk LGUI        &sk LCTRL           &deck_key    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp ENTER
+  &kp RA(LCTRL)       &kp LA(LCTRL)   &kp LG(LCTRL)   &kp LC(RCTRL)       &deck_key    &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp PRINTSCREEN
+                                      &sk LCTRL       &sk LEFT_SHIFT      &mo 3        &none     &none      &none
             >;
 
             label = "Nav";
@@ -117,10 +117,10 @@
 
         Maincra1 {
             bindings = <
-  &kp ESC    &kp Q  &kp W  &kp E  &kp R        &deck_key 1  &trans  &trans  &trans  &trans
-  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &deck_key 2  &trans  &trans  &trans  &trans
-  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &deck_key 3  &trans  &trans  &trans  &trans
-                    &kp B  &mo 6  &kp SPACE    &tog 5       &trans  &trans
+  &kp ESC    &kp Q  &kp W  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
+  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
+  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &trans  &trans  &trans  &trans  &trans
+                    &kp B  &mo 6  &kp SPACE    &tog 5  &trans  &trans
             >;
         };
 
